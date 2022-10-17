@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# react-rails
+create a new rails which incorporates react features for its user interface
+>>>>>>> 559c8439652f96e7c039caf38127416086298785
