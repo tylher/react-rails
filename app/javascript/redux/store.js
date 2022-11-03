@@ -3,6 +3,6 @@ import greetingReducer from "./greetingsSlice"
 
 export default configureStore({
     reducer: {
-        greetingReducer
+        greeting: greetingReducer
     }
 })
