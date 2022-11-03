@@ -1,12 +1,26 @@
 // Entry point for the build script in your package.json
 import React from "react";
 import ReactDOM from "react-dom";
+import Greetings from "./components/greetings";
+import {Route,BrowserRouter as Router,Routes} from "react-router-dom"
+import store from "./redux/store"
+import { Provider } from "react-redux";
 
 function App() {
-    return (<h1>Hello React-rails</h1>);
+    return (
+      <>
+        <Routes>
+            <Route path="/articles" element={<Greetings/>}/>
+        </Routes>
+      </>
+    );
   }
   
   ReactDOM.render(
-    <App/>,
+    <Router>
+      <Provider store={store}>
+        <App/>
+      </Provider>
+    </Router>,
     document.getElementById('root'),
   );
