@@ -7,10 +7,6 @@ export const fetchRandomGreeting = createAsyncThunk('greetings/fetchRandomGreeti
     .then(data => data.message)
 })
 
-// fetch('http://127.0.0.1:3000/v1/greetings', options)
-//   .then(response => response.json())
-//   .then(response => console.log(response))
-//   .catch(err => console.error(err));
 
 const greetingSlice = createSlice({
     name: 'greeting',
